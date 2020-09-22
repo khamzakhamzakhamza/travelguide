@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ribbon_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ribbon_ribbonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/PrimaryBlue"
+        android:orientation="horizontal">
+
+
+        <ImageButton
+            android:id="@+id/ribbon_backButton"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.06"
+            android:background="@color/PrimaryBlue"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/back_arrow" />
+
+        <TextView
+            android:id="@+id/ribbon_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.80"
+            android:elegantTextHeight="true"
+            android:elevation="0dp"
+            android:gravity="center"
+            android:text="TextView"
+            android:textColor="@color/White"
+            android:textSize="19sp" />
+
+        <ImageButton
+            android:id="@+id/ribbon_searchButton"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.06"
+            android:adjustViewBounds="false"
+            android:background="@color/PrimaryBlue"
+            android:elevation="0dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/search_icon" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ribbon_searchLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/White"
+        android:orientation="vertical">
+
+        <SearchView
+            android:id="@+id/ribbon_searchView"
+            android:layout_width="match_parent"
+            android:layout_height="43dp" />
+
+        <ListView
+            android:id="@+id/ribbon_listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.24"
+            android:background="@color/White" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

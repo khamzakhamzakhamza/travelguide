@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">TravelGuide</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="article">Article</string>
+    <string name="adding_article">Adding Article</string>
+    <string name="title_activity_maps">Map</string>
+
+  <string name="style_json">
+  [
+    {
+      \"featureType\": \"poi.business\",
+      \"elementType\": \"all\",
+      \"stylers\": [
+        {
+          \"visibility\": \"off\"
+        }
+      ]
+    },
+    {
+      \"featureType\": \"transit\",
+      \"elementType\": \"labels.icon\",
+      \"stylers\": [
+        {
+          \"visibility\": \"off\"
+        }
+      ]
+    }
+  ]
+  </string>
+</resources>
